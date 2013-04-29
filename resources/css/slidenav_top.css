@@ -1,0 +1,59 @@
+/* 
+    Document   : slidenav
+    Created on : Apr 26, 2013, 3:09:46 PM
+    Author     : SWARNENDU
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+/* For top navigation */
+
+
+.slide {
+    -webkit-animation-duration: .200s;
+    -webkit-transition-timing-function: cubic-bezier(0.275, 0.080, 0.425, 0.855); 
+}
+
+.slide.out {
+    -webkit-animation-name: mainSlideOut;
+    -webkit-transform: translateY(250px);
+}
+
+.slide.in {
+    -webkit-animation-name: mainSlideIn;
+    -webkit-transform: translateY(0px);
+}
+
+@-webkit-keyframes mainSlideOut {
+    from { 
+				-webkit-transform: translateY(0px); 
+} to {
+				-webkit-transform: translateY(250px); 
+}}
+
+@-webkit-keyframes mainSlideIn {
+    from { -webkit-transform: translateY(250px); }
+to { -webkit-transform: translateY(0px); }
+}
+
+.nav-list{
+				top : -250px;
+    height: 100%;
+				-webkit-transition: top .200s;	
+			-webkit-box-shadow: inset 0px -15px 30px -15px rgba(0,0,0,1);
+				background: #222;
+}
+
+.nav-list.show{
+				top : 0px;
+}
+
+.nav-list .x-list-item{
+				color: rgb(223, 223, 223);
+				border-bottom: 1px solid #000 !important;
+				border-top: 1px solid #333 !important;
+				font-size: 15px;
+}
+
+/* For top navigation ENDS */
