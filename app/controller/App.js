@@ -31,10 +31,10 @@ Ext.define('SlideNav.controller.App',{
 								
 								if (mainEl.hasCls('out')) {
 												mainEl.removeCls('out').addCls('in'); 
-												navEl.removeCls('show');
+												navEl.removeCls('in').addCls('out');
 								} else {
-											mainEl.removeCls('in').addCls('out');  
-											navEl.addCls('show'); 
+												mainEl.removeCls('in').addCls('out');  
+												navEl.removeCls('out').addCls('in');
 								}
 				}
 });

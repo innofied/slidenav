@@ -19,7 +19,7 @@ Ext.define('SlideNav.view.Viewport', {
 																xtype : 'titlebar',
 																title : 'Slide Nav',
 																items :[{
-																				align : 'left',
+																				align : 'right',
 																				name : 'nav_btn',
 																				iconCls : 'list',
 																				ui : 'plain'
