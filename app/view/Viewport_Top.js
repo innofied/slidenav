@@ -11,21 +11,7 @@ Ext.define('SlideNav.view.Viewport', {
 												cls: 'slide',
 												
 												// Needed to fit the whole content
-												width: '100%',
-												height : '100%',
-												
-												// Initial position of the main container
-												left: 0,
-												items : [{
-																xtype : 'titlebar',
-																title : 'Slide Nav',
-																items :[{
-																				align : 'right',
-																				name : 'nav_btn',
-																				iconCls : 'list',
-																				ui : 'plain'
-																}]
-												}]
+												height : '100%'
 								}, {
 												xtype : 'navigation',
 												height : 250

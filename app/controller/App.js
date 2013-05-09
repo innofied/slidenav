@@ -26,15 +26,12 @@ Ext.define('SlideNav.controller.App',{
 				 */
 				toggleNav : function(){
 								var me = this,
-								mainEl = me.getMain().element,
-								navEl = me.getNavigation().element;
+								mainEl = me.getMain().element;
 								
 								if (mainEl.hasCls('out')) {
 												mainEl.removeCls('out').addCls('in'); 
-												navEl.removeCls('in').addCls('out');
 								} else {
 												mainEl.removeCls('in').addCls('out');  
-												navEl.removeCls('out').addCls('in');
 								}
 				}
 });

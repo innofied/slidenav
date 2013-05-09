@@ -5,26 +5,14 @@ Ext.define('SlideNav.view.Viewport', {
 				'Ext.TitleBar'
 				],
 				config: {
+								fullscreen: true,
 								layout: 'hbox',
 								items : [{
 												xtype : 'main',
 												cls: 'slide',
 												
 												// Needed to fit the whole content
-												width: '100%',
-												
-												// Initial position of the main container
-												left: 0,
-												items : [{
-																xtype : 'titlebar',
-																title : 'Slide Nav',
-																items :[{
-																				align : 'left',
-																				name : 'nav_btn',
-																				iconCls : 'list',
-																				ui : 'plain'
-																}]
-												}]
+												width: '100%'												
 								}, {
 												xtype : 'navigation',
 												width : 250
