@@ -8,10 +8,13 @@ Head on to <a target="_blank" href="http://innofied.com/simplest-slide-navigatio
 
 This a very simple yet useful Slide navigation menu with Sencha Touch 2.2 . It is mostly developed with CSS3 transforms and a tiny bit of Sencha code. Feel free to use it in your application.
 
-### Updates
+## Updates
 
-[06/05/2013] : `Removed flickering in animation.`
+###### 06-05-2013
+Removed flickering in animation.
 
+###### 09-05-2013
+Main panel issues resolved. Any component can be added freely in Main panel now.
 
 ### Blog
 
