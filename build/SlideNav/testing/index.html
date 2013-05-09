@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html manifest="" lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>SlideNav</title>
+    <style type="text/css">
+         /**
+         * Example of an initial loading indicator.
+         * It is recommended to keep this as minimal as possible to provide instant feedback
+         * while other resources are still being loaded for the first time
+         */
+        html, body {
+            height: 100%;
+            background-color: #1985D0
+        }
+
+        #appLoadingIndicator {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            text-align: center;
+            width: 100%;
+            height: 30px;
+            -webkit-animation-name: appLoadingIndicator;
+            -webkit-animation-duration: 0.5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: linear;
+        }
+
+        #appLoadingIndicator > * {
+            background-color: #FFFFFF;
+            display: inline-block;
+            height: 30px;
+            -webkit-border-radius: 15px;
+            margin: 0 5px;
+            width: 30px;
+            opacity: 0.8;
+        }
+
+        @-webkit-keyframes appLoadingIndicator{
+            0% {
+                opacity: 0.8
+            }
+            50% {
+                opacity: 0
+            }
+            100% {
+                opacity: 0.8
+            }
+        }
+    </style>
+    <!-- The line below must be kept intact for Sencha Command to build your application -->
+    <script type="text/javascript">(function(i){function k(f,c){var a=document.createElement("meta");a.setAttribute("name",f);a.setAttribute("content",c);n.appendChild(a)}var n=i.document.head;if("undefined"===typeof c)var c=i.Ext={};c.blink=function(f){var i=f.js||[],f=f.css||[],a,j,b,d,l;navigator.userAgent.match(/IEMobile\/10\.0/)&&(a=document.createElement("style"),a.appendChild(document.createTextNode("@media screen and (orientation: portrait) {@-ms-viewport {width: 320px !important;}}@media screen and (orientation: landscape) {@-ms-viewport {width: 560px !important;}}")),
+document.getElementsByTagName("head")[0].appendChild(a));k("viewport","width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no");k("apple-mobile-web-app-capable","yes");k("apple-touch-fullscreen","yes");window.Ext||(window.Ext={});c.microloaded=!0;var m=window.Ext.filterPlatform=function(a){function b(a){var c=/Mobile(\/|\s)/.test(a);return/(iPhone|iPod)/.test(a)||!/(Silk)/.test(a)&&/(Android)/.test(a)&&(/(Android 2)/.test(a)||c)||/(BlackBerry|BB)/.test(a)&&c||
+/(Windows Phone)/.test(a)}function f(a){return!b(a)&&(/iPad/.test(a)||/Android/.test(a)||/(RIM Tablet OS)/.test(a)||/MSIE 10/.test(a)&&/; Touch/.test(a))}var g=false,e=navigator.userAgent,h,c,a=[].concat(a);h=window.location.search.substr(1).split("&");c={};var d;for(d=0;d<h.length;d++){var i=h[d].split("=");c[i[0]]=i[1]}if(h=c.platform)return a.indexOf(h)!=-1;h=0;for(c=a.length;h<c;h++){switch(a[h]){case "phone":g=b(e);break;case "tablet":g=f(e);break;case "desktop":g=!b(e)&&!f(e);break;case "ios":g=
+/(iPad|iPhone|iPod)/.test(e);break;case "android":g=/(Android|Silk)/.test(e);break;case "blackberry":g=/(BlackBerry|BB)/.test(e);break;case "safari":g=/Safari/.test(e)&&!/(BlackBerry|BB)/.test(e);break;case "chrome":g=/Chrome/.test(e);break;case "ie10":g=/MSIE 10/.test(e)}if(g)return true}return false};a=0;for(j=f.length;a<j;a++){b=f[a];"string"!=typeof b&&(d=b.profile,l=b.theme,b=b.path);if(d){if(!m(d))continue;c.theme={name:l||"Default"}}document.write('<link rel="stylesheet" href="'+b+'">')}a=
+0;for(j=i.length;a<j;a++)b=i[a],"string"!=typeof b&&(d=b.profile,b=b.path),(!d||m(d))&&document.write('<script src="'+b+'"><\/script>')}})(this);;Ext.blink({"id":"f24f7775-ccae-48ff-9fc5-7ed91b6d097a","js":[{"path":"app.js","bundle":true,"update":"delta","type":"js"}],"css":[{"path":"touch/resources/css/base.css","update":"delta","type":"css"},{"path":"resources/css/app.css","update":"delta","type":"css"},{"path":"resources/css/slidenav.css","update":"delta","type":"css"}]})</script>
+</head>
+<body>
+    <div id="appLoadingIndicator">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
