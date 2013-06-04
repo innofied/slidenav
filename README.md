@@ -16,6 +16,9 @@ Removed flickering in animation.
 ###### 09-05-2013
 Main panel issues resolved. Any component can be added freely in Main panel now.
 
+###### 04-06-2013
+Made z-index:10 of .slide class to z-index:1. It was hiding other Sencha Components with z-index less than 10.
+
 ### Blog
 
 <a target="_blank" href="http://innofied.com/simplest-slide-navigation-with-sencha-touch-2-2/">Innofied Blog</a>
