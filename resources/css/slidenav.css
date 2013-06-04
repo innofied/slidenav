@@ -16,7 +16,11 @@
 
 .slide {
 				background: #f1f1f1;
-				z-index: 10;
+				z-index: 1;
+}
+
+.x-toolbar{
+    z-index: 1000 !important;
 }
 
 /* Main view */
